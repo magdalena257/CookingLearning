@@ -1,396 +1,219 @@
-/* font-family: 'Quicksand', sans-serif; */
-/* font-family: 'Indie Flower', cursive; */
-
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
-
 :root {
-    --color1: #eeccdd;
-    --color2: #112233;
-    --color3: #002200;
-    --color4: #226600;
-    --color5: #66aa44;
-    --color6: #aacc88;
-    --cwhite: #ddeebb;
-    --cgreen: #668800;
-    --color9: #aabb11;
-    --color10: #ffee88;
-    --color11: #ffdd44;
-    --color12: #eeaa00;
-    --color13: #553300;
-    --color14: #ccbbaa;
-    --color15: #cc6600;
-    --color16: #bb8877;
-    --color17: #885544;
-    --cblack: #330000;
-    --color19: #dd0000;
-    --color20: #990000;
-    --levelheight: 40vh;
-
-
+	--darkBlue: #0d8dd7;
+	--lightBlue: #74c0e3;
+	--whitish: #fffffc;
+	--darkish: #0d0b12;
+	--graish: #d8dae5;
+	--levelheight: 40vh
 }
-
 .opacity {
-    width: 100%;
-    height: 100%;
-    opacity: 0.5;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5
 }
-
 html {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 10px;
-    background-color: var(--cwhite);
-    color: var(--cblack);
+	font-family: 'Quicksand', sans-serif;
+	font-size: 10px;
+	color: var(--whitish)
 }
-
-
-
 nav {
-    /* position: fixed; */
-    width: 100%;
-    height: 10vh;
-    background-color: var(--cgreen);
-    font-size: 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	width: 100%;
+	height: 8vh;
+	background-color: var(--darkBlue);
+	font-size: 2rem;
+	display: flex;
+	align-items: center
 }
-
-
-
 nav div {
-    /* border: 1px solid #000; */
-    display: flex;
-
+	display: flex
 }
-
 nav .mainLogo {
-    flex-basis: 25%;
-    padding-left: 2%;
-    font-family: 'Indie Flower', cursive;
-    font-size: 3rem;
-    /* align-self: flex-end; */
-    /* vertical-align: -100%; */
+	flex-basis: 25%;
+	padding-left: 2%;
+	font-family: 'Indie Flower', cursive;
+	font-size: 3rem
 }
-
 .mainLogo p {
-    cursor: pointer;
-    transition: .4s;
+	cursor: pointer;
+	transition: .4s;
+	margin-right: 5px
 }
-
 .mainLogo p:hover {
-    animation: changeColor 5s infinite;
-    /* color: var(--cwhite); */
+	animation: changeColor 5s infinite;
 }
-
 @keyframes changeColor {
-    0% {
-        color: var(--cblack);
-    }
-
-    13% {
-        color: var(--color20);
-    }
-
-    26% {
-        color: var(--color19);
-    }
-
-    39% {
-        color: var(--color15);
-    }
-
-    54% {
-        color: var(--color12);
-    }
-
-    69% {
-        color: var(--color9);
-    }
-
-    80% {
-        color: var(--color4);
-    }
+	0% {
+		color: var(--lightBlue);
+	}
+	25% {
+		color: var(--whitish);
+	}
+	50% {
+		color: var(--graish);
+	}
+	75% {
+		color: var(--darkish);
+	}
 }
-
-nav .tabsNav,
-nav .loggedUser {
-    flex-basis: 40%;
+nav .tabsNav,nav .loggedUser {
+	flex-basis: 40%
 }
-
 nav .tabsNav {
-    font-size: 2.2rem;
-
-
-
+	font-size: 2.2rem
 }
-
 .tabNav {
-    border: 2px solid;
-    border-radius: 10%;
-    padding: 3px 6px;
-    margin-right: 10%;
-    width: 100px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: .2s;
-
+	padding: 6px;
+	width: 100px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: .2s
 }
-
 .tabNav:hover {
-    color: var(--cwhite);
-    /* background-color: var(--color4); */
+	color: var(--lightBlue);
 }
-
 .loggedUser {
-    justify-content: flex-end;
+	justify-content: flex-end
 }
-
 .loggedUserFeature {
-    margin-right: 5px;
-    padding: 10px;
-    /* border: 1px solid #000; */
-    cursor: pointer;
-    transition: .2s;
-
+	margin-right: 5px;
+	padding: 10px;
+	cursor: pointer;
+	transition: .2s
 }
-
-.loggedUserFeature i,
-.loggedUserFeature p {
-    padding: 3px;
-    cursor: pointer;
+.loggedUserFeature i,.loggedUserFeature p {
+	padding: 3px;
+	cursor: pointer
 }
-
 .loggedUserFeature:hover {
-    color: var(--cwhite);
+	color: var(--lightBlue)
 }
-
 .learntRecipes p {
-    vertical-align: 20%;
-    /* VERTICAL ALIGN DOESNT WORK?? */
+	vertical-align: 20%;
 }
-
 main {
-    width: 95%;
-    min-height: 100vh;
-    margin: auto;
-    margin-top: 20px;
-    border: 2px solid var(--cgreen);
-    border-radius: 3%;
-    background-color: #eef8da;
-    display: flex;
-    flex-direction: column;
+	min-height: 100vh;
+	margin: auto;
+	background-color: #d8dae5;
+	display: flex;
+	flex-direction: column
 }
-
 main .tabsMain {
-    /* flex-basis: 2%; */
-    height: 8vh;
-    border-bottom: 2px solid var(--color20);
-    font-size: 2.2rem;
-    display: flex;
-    align-items: flex-end;
-    padding-left: 19%;
-
-
+	height: 8vh;
+	background-color: var(--lightBlue);
+	font-size: 2.2rem;
+	display: flex;
 }
-
 main .tabMain {
-    /* margin-top: 10px; */
-    /* background-color: var(--color1); */
-    height: 6vh;
-    border: 2px solid var(--color20);
-    border-bottom: none;
-    border-radius: 10%;
-    flex-basis: 15%;
-    margin-left: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    cursor: pointer;
-    transition: .2s;
+	height: 100%;
+	flex-basis: 15%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: .2s
 }
-
 main .tabMain:hover {
-    color: #eef8da;
-    background-color: var(--color20);
+	color: var(--lightBlue);
+	background-color: var(--darkBlue);
 }
-
 .activetab {
-    color: #eef8da;
-    background-color: var(--color20);
-
+	color: var(--whitish);
+	background-color: var(--darkBlue);
 }
-
-.activetab:hover {
-    color: var(--color20);
-    background-color: #eef8da;
-}
-
-/* CONTENT */
-
 main .contentsMain {
-    display: flex;
-    width: 100%;
-    /* min-height: 94vh; */
-    /* background-color: red; */
-    overflow: hidden;
-
+	display: flex;
+	width: 100%;
+	overflow: hidden
 }
-
-/* LEVEL NAMES */
-
 main .levelNames {
-    /* height: 100%; */
-    flex-basis: 15%;
-    flex-shrink: 0;
-
-
-    display: flex;
+	flex-basis: 15%;
+	flex-shrink: 0;
+	display: flex;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
+	border-top: 1px solid var(--lightBlue);
 }
-
 .levelName {
-    flex-basis: var(--levelheight);
-    flex-shrink: 0;
-    border-top: 1px solid var(--cwhite);
-    border-right: 1px solid var(--cwhite);
-    color: var(--cblack);
-    font-size: 5rem;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-bottom: 1px solid var(--lightBlue);
+	flex-basis: var(--levelheight);
+	flex-shrink: 0;
+	color: var(--darkish);
+	font-size: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center
 }
-
-
-/* CONTENT OF LEVELS AND CATEGORIES */
-
-
 .levels {
-    display: flex;
-    flex-basis: 255%;
-    flex-shrink: 0;
-
+	display: flex;
+	flex-basis: 255%;
+	flex-shrink: 0
 }
-
 .category {
-
-    flex-basis: 0;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    /* width: 80%; */
-
+	flex-basis: 0;
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
 }
-
-
-
-
-
 .level {
-    /* background-color: blue; */
-    flex-basis: var(--levelheight);
-    flex-shrink: 0;
-    border-top: 1px solid var(--cwhite);
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+	flex-basis: var(--levelheight);
+	flex-shrink: 0;
+	border-top: 1px solid var(--lightBlue);
+	display: flex;
+	justify-content: space-around;
+	align-items: center
 }
-
-
-
 .contentMainDinner .recipeimg {
-    background-image: url('images/spaghetti.jpg');
+	background-image: url('images/spaghetti.jpg')
 }
-
 .contentMainSnacks .recipeimg {
-    background-image: url('images/fruits.jpg');
+	background-image: url('images/fruits.jpg')
 }
-
-
-
-
 .recipeimg .opacity {
-    background-color: #eef8da;
-    border-radius: 50%;
+	background-color: var(--whitish);
+	border-radius: 50%
 }
-
 .recipeimg {
-    background-image: url('images/vege.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 0%;
-    height: 15vh;
-    border: 0px solid black;
-    border-radius: 50%;
+	background-image: url('images/vege.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 0%;
+	height: 15vh;
+	border-radius: 50%
 }
-
-.recipeimg,
+.recipeimg,.recipeName {
+	cursor: pointer;
+	flex-shrink: 1
+}
 .recipeName {
-    cursor: pointer;
-    flex-shrink: 1;
-
+	font-size: 0;
+	text-align: center;
+	margin-top: 15px;
 }
-
-.recipeName {
-    font-size: 0;
-    text-align: center;
-    margin-top: 15px;
-    /* font-family: 'Indie Flower', cursive; */
-
-}
-
-/* INACTIVE CATEGORY */
 .activeCategory .recipeimg {
-    border: 3px solid var(--cblack);
-    width: 15vh;
-
+	border: 3px solid var(--darkBlue);
+	width: 15vh
 }
-
 .activeCategory .recipeName {
-    font-size: 2rem;
-
-
+	font-size: 2rem
 }
-
 .activeCategory {
-    flex-basis: calc(100%/3);
-
-
+	flex-basis: calc(100%/3)
 }
-
-.category,
-.recipeimg,
-.recipeName,
-.activeCategory .recipeimg,
-.activeCategory .recipeName,
-.activeCategory {
-    transition: 0.5s linear;
-
+.category,.recipeimg,.recipeName,.activeCategory .recipeimg,.activeCategory .recipeName,.activeCategory {
+	transition: 0.5s linear
 }
-
-.category,
-.recipeimg,
-.recipeName {
-    opacity: 0.5;
+.category,.recipeimg,.recipeName {
+	opacity: 0.5
 }
-
-.activeCategory .recipeimg,
-.activeCategory .recipeName,
-.activeCategory {
-    opacity: 1;
+.activeCategory .recipeimg,.activeCategory .recipeName,.activeCategory {
+	opacity: 1
 }
-
 .recipe a {
-    text-decoration: none;
-
+	text-decoration: none
 }
