@@ -239,7 +239,7 @@ main .contentsMain {
     width: 100%;
     /* min-height: 94vh; */
     /* background-color: red; */
-    /* overflow: hidden; */
+    overflow: hidden;
 
 }
 
@@ -330,7 +330,7 @@ main .levelNames {
     background-repeat: no-repeat;
     width: 0%;
     height: 15vh;
-    border: 0px;
+    border: 0px solid black;
     border-radius: 50%;
 }
 
@@ -374,5 +374,23 @@ main .levelNames {
 .activeCategory .recipeimg,
 .activeCategory .recipeName,
 .activeCategory {
-    transition: 0.4s linear;
+    transition: 0.5s linear;
+
+}
+
+.category,
+.recipeimg,
+.recipeName {
+    opacity: 0.5;
+}
+
+.activeCategory .recipeimg,
+.activeCategory .recipeName,
+.activeCategory {
+    opacity: 1;
+}
+
+.recipe a {
+    text-decoration: none;
+
 }
