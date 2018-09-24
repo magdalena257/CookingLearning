@@ -5,24 +5,29 @@ function activeContent() {
     // TAB CHANGE
     $('.tabMain').removeClass("activetab");
     $(this).addClass('activetab');
-    // console.log($(this));
-
     // CONTENT CHANGE
+    $('.category').removeClass('activeCategory');
     if ($(this).hasClass('breakfast')) {
-        console.log('breakfast')
-        $('.contentMainDinner').removeClass('activeCategory');
-        $('.contentMainSnacks').removeClass('activeCategory');
         $('.contentMainBreakfast').addClass('activeCategory');
-
     } else if ($(this).hasClass('dinner')) {
-        console.log('dinner')
-        $('.contentMainBreakfast').removeClass('activeCategory');
-        $('.contentMainSnacks').removeClass('activeCategory');
         $('.contentMainDinner').addClass('activeCategory');
-    } else if ($(this).hasClass('snacks')) {
-        console.log('snacks')
-        $('.contentMainBreakfast').removeClass('activeCategory');
-        $('.contentMainDinner').removeClass('activeCategory');
+    } else {
         $('.contentMainSnacks').addClass('activeCategory');
     }
 }
+
+$('.shoplist').on('click', shoplistFunction);
+
+function shoplistFunction() {
+    console.log('shoplistFunction');
+    $('.shoplisted').toggleClass('activeFeature');
+};
+
+
+$('.feature').on('click', showDescription);
+
+function showDescription() {
+    console.log($(this));
+}
+console.log($('.feature'));
+console.log($('.category'));
