@@ -1,3 +1,8 @@
+// INDEX.HTML
+
+
+
+
 $('.tabMain').on('click', activeContent);
 
 function activeContent() {
@@ -16,50 +21,57 @@ function activeContent() {
     }
 }
 
-// $('.shoplist').on('click', shoplistFunction);
 
-// function shoplistFunction() {
-//     console.log('shoplistFunction');
+// RECIPE.HTML
 
-// };
+
 
 
 $('.feature').on('click', showDescription);
 
 function showDescription() {
-    $('.feature').removeClass('largerFeature');
     $('.shoplisted').removeClass('activeFeature');
-    $('.feature').addClass('smallerFeature');
-    $(this).removeClass('smallerFeature');
-    $(this).addClass('largerFeature');
-    $('.descriptionFeature').css({
-        'font-size': '0',
-        'padding': 'none'
-    });
+    $('.scaled').removeClass('activeFeature');
+    $('.notScaled').removeClass('inactiveFeature');
+    $('.descriptionFeature').removeClass('descriptionFeatureActive');
+    $('.priced').addClass('inactiveFeature');
+    $('.caloried').addClass('inactiveFeature');
     if ($(this).hasClass('largerFeature')) {
         $('.feature').removeClass('largerFeature');
-        $('.descriptionFeature').css({
-            'font-size': '0',
-            'padding': 'none'
-        });
         $('.feature').removeClass('smallerFeature');
+        return 0;
+
+    } else {
+        $('.feature').removeClass('largerFeature');
+        $('.feature').addClass('smallerFeature');
+        $(this).removeClass('smallerFeature');
+        $(this).addClass('largerFeature');
 
     }
+
+
     if ($(this).hasClass('shoplist')) {
-        $('.shoplist .descriptionFeature').css({
-            'font-size': '1.5rem',
-            'padding': '5px'
-        });
+        $('.shoplist .descriptionFeature').addClass('descriptionFeatureActive');
         $('.shoplisted').addClass('activeFeature');
+
 
     }
     if ($(this).hasClass('scale')) {
-        $('.scale .descriptionFeature').css({
-            'font-size': '1.5rem',
-            'padding': '5px'
-        });
-        // $('.shoplisted').addClass('activeFeature');
+        $('.scale .descriptionFeature').addClass('descriptionFeatureActive');
+        $('.scaled').addClass('activeFeature');
+        $('.notScaled').addClass('inactiveFeature');
 
     }
+    if ($(this).hasClass('prices')) {
+        $('.prices .descriptionFeature').addClass('descriptionFeatureActive');
+        $('.priced').removeClass('inactiveFeature');
 
+
+    }
+    if ($(this).hasClass('calories')) {
+        $('.calories .descriptionFeature').addClass('descriptionFeatureActive');
+        $('.caloried').removeClass('inactiveFeature');
+
+
+    }
 }

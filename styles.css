@@ -466,19 +466,24 @@ li {
 	font-size: 1.5rem;
 }
 
-.shoplisted {
-	display: none;
+.priced,
+.caloried {
+	font-size: 1.5rem;
 }
+
+.shoplisted,
+.scaled,
+.inactiveFeature {
+	display: none;
+
+}
+
+
 
 .activeFeature {
 	display: inline-block;
 }
 
-.scaled {
-
-
-	display: none;
-}
 
 /* FEATURES STYLES START HERE
 
@@ -538,5 +543,12 @@ li {
 	transition: 0.3s;
 	font-weight: normal;
 	letter-spacing: 0;
+	height: auto;
+	padding: 0;
+}
+
+.descriptionFeatureActive {
+	font-size: 1.5rem;
+	padding: 5px;
 	height: auto;
 }
