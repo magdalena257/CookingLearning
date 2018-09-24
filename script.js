@@ -27,7 +27,29 @@ function shoplistFunction() {
 $('.feature').on('click', showDescription);
 
 function showDescription() {
-    console.log($(this));
+    $('.feature').removeClass('largerFeature');
+    $('.feature').addClass('smallerFeature');
+    $(this).removeClass('smallerFeature');
+    $(this).addClass('largerFeature');
+
+    if ($(this).hasClass('shoplist')) {
+        $('.shoplist .descriptionFeature').css({
+            'font-size': '1.5rem',
+            'padding': '5px'
+        });
+
+
+    }
+
+
 }
-console.log($('.feature'));
-console.log($('.category'));
+// switch(expression) {
+//     case x:
+//         code block
+//         break;
+//     case y:
+//         code block
+//         break;
+//     default:
+//         code block
+// }

@@ -487,6 +487,10 @@ li {
 
 .features {
 	font-size: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
 
 }
 
@@ -494,6 +498,7 @@ li {
 
 	transition: 0.2s;
 	cursor: pointer;
+	padding-left: 3px;
 }
 
 .features div:hover {
@@ -502,14 +507,24 @@ li {
 }
 
 .largerFeature {
-	font-size: 2rem;
+	flex-grow: 1;
+	flex-shrink: 0;
+
+	font-weight: bold;
 }
 
 .smallerFeature {
 	padding: none;
-	font-size: 1rem;
+	/* font-size: 1rem; */
+	flex-grow: 1;
+	flex-shrink: 1;
 }
 
 .descriptionFeature {
 	font-size: 0;
+	transition: 0.3s;
+	font-weight: normal;
+	letter-spacing: 0;
+	height: 0;
+
 }
