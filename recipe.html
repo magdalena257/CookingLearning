@@ -20,8 +20,8 @@
         </div>
         <div class="tabsNav">
             <div class="tabNav homePage"><a href="index.html">home</a></div>
-            <div class="tabNav badgesPage">about</div>
-            <div class="tabNav blogPage">blog</div>
+            <div class="tabNav badgesPage"><a href="index.html">about</a></div>
+            <div class="tabNav blogPage"><a href="index.html">blog</a></div>
         </div>
         <div class="loggedUser">
             <div class="loggedUserFeature user">
@@ -51,29 +51,38 @@
             </div>
             <div class="ingredients">
                 <h2>Ingredients:</h2>
-                <p>for 2 portions</p>
+                <p class="notScaled">for 2 portions</p>
                 <p class="scaled">for <input type="text" maxlength="2" size="1" placeholder="2"> portions</p>
                 <ul>
                     <li>
-                        <input class="shoplisted" type="checkbox" id="c1" name="cc" /> <label for="c1">2 tomatos</label><label
-                            class="scaled" for="c1"><input type="text" maxlength="4" size="4" placeholder="2"> tomatos</label>
+                        <input class="shoplisted" type="checkbox" id="c1" name="cc" />
+                        <label class="notScaled" for="c1">2 tomatos</label>
+                        <label class="scaled" for="c1"><input type="text" maxlength="4" size="4" placeholder="2">
+                            tomatos</label><span class="priced inactiveFeature">4euro</span><span class="caloried inactiveFeature">100kcal</span>
                     </li>
                     <li>
-                        <input class="shoplisted" type="checkbox" id="c2" name="cc" /> <label for="c2">150g pasta</p><label
-                                class="scaled" for="c2"><input type="text" maxlength="4" size="4" placeholder="150">g
-                                pasta</label>
+                        <input class="shoplisted" type="checkbox" id="c2" name="cc" />
+                        <label class="notScaled" for="c2">150g pasta</label>
+                        <label class="scaled" for="c2"><input type="text" maxlength="4" size="4" placeholder="150">g
+                            pasta</label><span class="priced inactiveFeature">2euro</span><span class="caloried inactiveFeature">500kcal</span>
                     </li>
                     <li>
-                        <input class="shoplisted" type="checkbox" id="c3" name="cc" /> <label for="c3">20ml cream</label><label
-                            class="scaled" for="c3"><input type="text" maxlength="4" size="4" placeholder="20">ml cream</label>
+                        <input class="shoplisted" type="checkbox" id="c3" name="cc" />
+                        <label class="notScaled" for="c3">20ml cream</label>
+                        <label class="scaled" for="c3"><input type="text" maxlength="4" size="4" placeholder="20">ml
+                            cream</label><span class="priced inactiveFeature">3.5euro</span><span class="caloried inactiveFeature">300kcal</span>
                     </li>
                     <li>
-                        <input class="shoplisted" type="checkbox" id="c4" name="cc" /> <label for="c4">5g oregano</label><label
-                            class="scaled" for="c4"><input type="text" maxlength="4" size="4" placeholder="5">g oregano</label>
+                        <input class="shoplisted" type="checkbox" id="c4" name="cc" />
+                        <label class="notScaled" for="c4">5g oregano</label>
+                        <label class="scaled" for="c4"><input type="text" maxlength="4" size="4" placeholder="5">g
+                            oregano</label><span class="priced inactiveFeature">1euro</span><span class="caloried inactiveFeature">kcal</span>
                     </li>
                     <li>
-                        <input class="shoplisted" type="checkbox" id="c5" name="cc" /> <label for="c5">5g basilia</label><label
-                            class="scaled" for="c5"><input type="text" maxlength="4" size="4" placeholder="5">g basilia</label>
+                        <input class="shoplisted" type="checkbox" id="c5" name="cc" />
+                        <label class="notScaled" for="c5">5g basilia</label>
+                        <label class="scaled" for="c5"><input type="text" maxlength="4" size="4" placeholder="5">g
+                            basilia</label><span class="priced inactiveFeature">1euro</span><span class="caloried inactiveFeature">0kcal</span>
                     </li>
                 </ul>
             </div>
@@ -85,7 +94,7 @@
                         <div class="timer"></div>
                     </li>
                     <li>
-                        <p>Mix them thorougly.</p>
+                        <p>Mix them thoroughly.</p>
                         <div class="timer"></div>
                     </li>
                     <li>
@@ -109,17 +118,18 @@
             </div>
             <div class="scale feature">
                 <p>Scale</p>
-                <p class="descriptionFeature">Tick what you don't have. A shoplist will be created for you. You
-                    can:<a> send it on your email,</a> <a>phone via sms,</a> <a>snapchat,</a> <a>print it.</a>You can
-                    also substitute some of the products with something else. Just hover over the ingredient to see
-                    what you can do.</p>
+                <p class="descriptionFeature">Scale the thing!</p>
 
             </div>
             <div class="prices feature">
                 <p> Price</p>
+                <p class="descriptionFeature">Check the prices! If you scale the thing, prices will be scaled
+                    accordingly.</p>
             </div>
             <div class="calories feature">
                 <p> Calories</p>
+                <p class="descriptionFeature">Check the calories! If you scale the thing, calories will be scaled
+                    accordingly.</p>
             </div>
             <div class="timer feature">
                 <p> Timer</p>
