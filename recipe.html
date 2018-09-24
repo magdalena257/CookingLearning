@@ -46,35 +46,43 @@
                 <img src='images/vege.jpg' alt="" class="img2">
                 <img src='images/fruits.jpg' alt="" class="img3">
             </div>
-            <div class="recipeName">
+            <div class="recipeh1">
                 <h1>Spaghetti</h1>
             </div>
             <div class="ingredients">
                 <h2>Ingredients:</h2>
+                <p>for 2 portions</p>
+                <p class="scaled">for <input type="text" maxlength="2" size="1" placeholder="2"> portions</p>
                 <ul>
                     <li>
-                        <input type="checkbox" id="c1" name="cc" /> <label for="c1">2 tomatos</label>
+                        <input class="shoplisted" type="checkbox" id="c1" name="cc" /> <label for="c1">2 tomatos</label><label
+                            class="scaled" for="c1"><input type="text" maxlength="4" size="4" placeholder="2"> tomatos</label>
                     </li>
                     <li>
-                        <input type="checkbox" id="c1" name="cc" /> <label for="c1">150g pasta</p>
+                        <input class="shoplisted" type="checkbox" id="c1" name="cc" /> <label for="c1">150g pasta</p><label
+                                class="scaled" for="c1"><input type="text" maxlength="4" size="4" placeholder="150">g
+                                pasta</label>
                     </li>
                     <li>
-                        <input type="checkbox" id="c1" name="cc" /> <label for="c1">20ml cream</label>
+                        <input class="shoplisted" type="checkbox" id="c1" name="cc" /> <label for="c1">20ml cream</label><label
+                            class="scaled" for="c1"><input type="text" maxlength="4" size="4" placeholder="20">ml cream</label>
                     </li>
                     <li>
-                        <input type="checkbox" id="c1" name="cc" /> <label for="c1">5g oregano</label>
+                        <input class="shoplisted" type="checkbox" id="c1" name="cc" /> <label for="c1">5g oregano</label><label
+                            class="scaled" for="c1"><input type="text" maxlength="4" size="4" placeholder="5">g oregano</label>
                     </li>
                     <li>
-                        <input type="checkbox" id="c1" name="cc" /> <label for="c1">5g basilia</label>
+                        <input class="shoplisted" type="checkbox" id="c1" name="cc" /> <label for="c1">5g basilia</label><label
+                            class="scaled" for="c1"><input type="text" maxlength="4" size="4" placeholder="5">g basilia</label>
                     </li>
                 </ul>
             </div>
             <div class="recipeList">
-                <h2>Recipe</h2>
-                <ul>
+                <h2>Recipe:</h2>
+                <ol>
                     <li>
-                        <p></p>
-                        <div class="timer">Put all the ingredients in a bowl.</div>
+                        <p>Put all the ingredients in a bowl.</p>
+                        <div class="timer"></div>
                     </li>
                     <li>
                         <p>Mix them thorougly.</p>
@@ -84,51 +92,53 @@
                         <p>Put into the oven</p>
                         <div class="timer"></div>
                     </li>
-                </ul>
+                </ol>
             </div>
         </section>
         <aside class="features">
-            <div class="measures">
+            <div class="measures" class="feature">
                 <p><span>Metric</span> or <span class="imperial">imperial?</span></p>
             </div>
-            <div class="shoplist">
+            <div class="shoplist" class="feature">
                 <p>Don't have all the ingredients?</p>
+                <p class="descriptionFeature">Tick what you have, a shoplist of what you don't will be created. You can
+                    sand it on your email, phone by sms, snapchat or print it</p>
             </div>
             </div>
-            <div class="scale">
+            <div class="scale" class="feature">
                 <p>Scale</p>
             </div>
-            <div class="prices">
+            <div class="prices" class="feature">
                 <p> Price</p>
             </div>
-            <div class="calories">
+            <div class="calories" class="feature">
                 <p> Calories</p>
             </div>
-            <div class="timer">
+            <div class="timer" class="feature">
                 <p> Timer</p>
             </div>
-            <div class="voice">
+            <div class="voice" class="feature">
                 <p> Real time audio description</p>
             </div>
-            <div class="minimal">
+            <div class="minimal" class="feature">
                 <p> Minimal version</p>
             </div>
-            <div class="tips">
+            <div class="tips" class="feature">
                 <p>Tips</p>
             </div>
-            <div class="recommendations">
+            <div class="recommendations" class="feature">
                 <p> User recommendations</p>
             </div>
-            <div class="gallery">
+            <div class="gallery" class="feature">
                 <p> User gallery</p>
             </div>
-            <div class="rating">
+            <div class="rating" class="feature">
                 <p> My rating</p>
             </div>
-            <div class="userPhoto">
+            <div class="userPhoto" class="feature">
                 <p> Upload a photo</p>
             </div>
-            <div class="export">
+            <div class="export" class="feature">
                 <p> Export this recipe to MyFitnessPal</p>
             </div>
 
@@ -136,6 +146,8 @@
         </aside>
 
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
